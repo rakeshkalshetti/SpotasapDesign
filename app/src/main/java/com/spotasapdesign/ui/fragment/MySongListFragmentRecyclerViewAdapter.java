@@ -1,7 +1,6 @@
 package com.spotasapdesign.ui.fragment;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,10 +17,10 @@ import java.util.List;
  */
 public class MySongListFragmentRecyclerViewAdapter extends RecyclerView.Adapter<MySongListFragmentRecyclerViewAdapter.ViewHolder> {
 
-    private final List<SongItem> mValues;
+    private final List<SongItem> songItemList;
 
     public MySongListFragmentRecyclerViewAdapter(List<SongItem> items) {
-        mValues = items;
+        songItemList = items;
     }
 
     @Override
@@ -33,7 +32,7 @@ public class MySongListFragmentRecyclerViewAdapter extends RecyclerView.Adapter<
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        holder.mItem = mValues.get(position);
+        holder.mItem = songItemList.get(position);
 
         if(holder.mItem != null) {
             holder.titleTextView.setText(holder.mItem.title);
@@ -45,7 +44,7 @@ public class MySongListFragmentRecyclerViewAdapter extends RecyclerView.Adapter<
 
     @Override
     public int getItemCount() {
-        return mValues.size();
+        return songItemList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
