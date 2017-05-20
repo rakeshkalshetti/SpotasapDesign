@@ -7,7 +7,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * Created by Rakesh on 19/05/17.
+ */
 public class SongContent {
 
     public static final List<SongItem> ITEMS = new ArrayList<SongItem>();

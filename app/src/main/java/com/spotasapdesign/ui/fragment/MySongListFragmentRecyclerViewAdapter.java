@@ -13,7 +13,9 @@ import com.spotasapdesign.model.SongContent.SongItem;
 
 import java.util.List;
 
-
+/**
+ * Created by Rakesh on 19/05/17.
+ */
 public class MySongListFragmentRecyclerViewAdapter extends RecyclerView.Adapter<MySongListFragmentRecyclerViewAdapter.ViewHolder> {
 
     private final List<SongItem> mValues;
