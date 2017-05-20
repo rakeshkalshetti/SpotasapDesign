@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.spotasapdesign.ui.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/albumImageView"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        app:srcCompat="@drawable/dance"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/playImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/play"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignBottom="@+id/albumImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chain smoker new album"
+        android:gravity="bottom"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:layout_alignTop="@+id/playImageView"
+        android:layout_toRightOf="@+id/playImageView"
+        android:layout_toEndOf="@+id/playImageView" />
+
+    <TextView
+        android:id="@+id/detailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:gravity="top"
+        android:textColor="@android:color/white"
+        android:text="ft. rihana and user"
+
+        android:layout_below="@+id/titleTextView"
+        android:layout_alignLeft="@+id/titleTextView"
+        android:layout_alignStart="@+id/titleTextView" />
+
+
+</RelativeLayout>
