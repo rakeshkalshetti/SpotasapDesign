@@ -21,7 +21,7 @@ import com.spotasapdesign.ui.fragment.SongListFragmentFragment;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private int c = 0;
+    private int cd = 0;
     private ViewPager topSongViewPager;
     private TabLayout topTabLayout;
 
